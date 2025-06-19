@@ -313,14 +313,14 @@ function ProcessStep({ number, title, description, time, icon, color }: ProcessS
         {number}
       </div>
       <div className="flex-1">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="text-solana-green">{icon}</div>
-          <h3 className="text-xl font-semibold text-white">{title}</h3>
-          <div className="flex items-center gap-1 text-solana-blue">
-            <Clock size={16} />
-            <span className="text-sm font-medium">{time}</span>
-          </div>
-        </div>
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-2">
+  <div className="text-solana-green">{icon}</div>
+  <h3 className="text-xl font-semibold text-white">{title}</h3>
+  <div className="flex items-center gap-1 text-solana-blue whitespace-nowrap">
+    <Clock size={16} />
+    <span className="text-sm font-medium">{time}</span>
+  </div>
+</div>
         <p className="text-gray-400">{description}</p>
       </div>
     </div>
